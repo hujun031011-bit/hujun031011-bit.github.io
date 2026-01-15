@@ -41,5 +41,10 @@
       updateGapDay(localStorage.getItem('gapStartDate'));
     }
   </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/gaptimer/sw.js');
+  }
+</script>
 </body>
 </html>
