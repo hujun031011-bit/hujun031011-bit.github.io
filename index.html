@@ -14,6 +14,11 @@
     .rank-item { background: white; padding: 12px; margin: 10px 0; border-radius: 8px; }
   </style>
 </head>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
 <body>
   <h1>GapTimer</h1>
   <p class="slogan">Gap, not alone.</p>
